@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- <favicon href="img/sushmitha.jpeg" type="image/png" sizes="16x16"> -->
+    <link rel="icon" href="img/sushmitha.jpeg" type="image/png" sizes="16x16">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushmitha Devi Pindi | AI/ML Engineer</title>
@@ -8,7 +10,7 @@
     <style>
         :root {
             --primary: #ad004e;
-            --secondary: #ff88b8;
+            --secondary: #ff76ad;
             --dark: #343a40;
             --light: #f8f9fa;
             --accent: #7afcff;
@@ -506,6 +508,7 @@
         }
         
         .contact-form {
+            margin-top: 20px;
             background-color: white;
             border-radius: 10px;
             box-shadow: var(--shadow);
@@ -587,6 +590,7 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             .nav-container {
+                margin: 5px;
                 flex-direction: column;
                 align-items: flex-start;
             }
@@ -633,6 +637,58 @@
                 text-align: left;
             }
         }
+
+                /* Responsive Design */
+                @media (max-width: 400px) {
+                    .nav-container {
+                        margin-left: 15px;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                    
+                    .nav-links {
+                        display: none;
+                        flex-direction: column;
+                        width: 100%;
+                        gap: 1rem;
+                        margin-top: 1rem;
+                    }
+                    
+                    .nav-links.active {
+                        display: flex;
+                    }
+                    
+                    .menu-toggle {
+                        display: block;
+                        position: absolute;
+                        top: 1rem;
+                        right: 1rem;
+                    }
+                    
+                    .about-content {
+                        flex-direction: column;
+                    }
+                    
+                    .timeline::after {
+                        left: 31px;
+                    }
+                    
+                    .timeline-item {
+                        width: 100%;
+                        padding-left: 70px;
+                        padding-right: 25px;
+                    }
+                    
+                    .timeline-item::after {
+                        left: 21px;
+                    }
+                    
+                    .left, .right {
+                        left: 0;
+                        text-align: left;
+                    }
+                }
+        
     </style>
 </head>
 <body>
@@ -648,8 +704,8 @@
             </div>
             <div class="social-links">
                 <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://in.linkedin.com/in/sushmithapindi"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://youtube.com/@vibe_with_sushmitha?si=9SyOSJLokoC024ng"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
     </header>
@@ -673,25 +729,32 @@
         </div>
     </nav>
     
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
+<!-- About Section -->
+<section id="about" class="section" style="padding: 60px 0; background-color: #f9f9f9;">
+    <div class="container" style="max-width: 1200px; margin: auto;">
+        <div class="section-title" style="text-align: center; margin-bottom: 40px;">
+            <h2 style="font-size: 32px; color: #ad004e;">About Me</h2>
+        </div>
+        <div class="about-content" style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+            <div class="about-img" style="flex: 1; text-align: center;">
+                <img src="img/sushmitha.jpeg" alt="About Sushmitha" style="max-width: 300px; width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Hello! I'm Sushmitha</h3>
-                    <p>I'm a passionate AI/ML Engineer specializing in Natural Language Processing with a strong foundation in Python programming and machine learning algorithms. Currently pursuing my B.Tech in AI & ML at Swarnandhra College of Engineering and Technology with a CGPA of 8.7.</p>
-                    <p>My journey in technology began with a curiosity about how machines can understand human language, which led me to explore NLP and develop innovative solutions like chatbots and translation systems. Beyond coding, I enjoy content creation, video editing, and public speaking.</p>
-                    <p>I'm fluent in English, Hindi, and Telugu, which helps me connect with diverse teams and audiences. My goal is to leverage AI to create solutions that make technology more accessible and intuitive for everyone.</p>
-                </div>
-                <div class="about-img">
-                    <!-- <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="About Sushmitha"> -->
+            <div class="about-text" style="flex: 2;">
+                <h3 style="color: #333;">Hello! I'm Sushmitha</h3>
+                <p style="font-size: 16px; color: #555; line-height: 1.6;">I'm a passionate AI/ML Engineer specializing in Natural Language Processing with a strong foundation in Python programming and machine learning algorithms. Completed my B.Tech in AI & ML at Swarnandhra College of Engineering and Technology with a CGPA of 8.7.</p>
+                <p style="font-size: 16px; color: #555; line-height: 1.6;">My journey in technology began with a curiosity about how machines can understand human language, which led me to explore NLP and develop innovative solutions like chatbots and translation systems. Beyond coding, I enjoy content creation, video editing, and public speaking.</p>
+                <p style="font-size: 16px; color: #555; line-height: 1.6;">I'm fluent in English, Hindi, and Telugu, which helps me connect with diverse teams and audiences. My goal is to leverage AI to create solutions that make technology more accessible and intuitive for everyone.</p>
+
+                <div class="resume-link" style="margin-top: 30px; display: block;">
+                    <a href="img/Sushmitha_Devi_Resume.pdf" target="_blank" style="text-decoration: none; color: #ad004e; font-size: 18px; display: inline-block; margin-top: 10px;">
+                        <i class="fas fa-external-link-alt" style="margin-right: 5px;"></i><b>My Resume</b>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
     
     <!-- Skills Section -->
     <section id="skills" class="section">
@@ -791,8 +854,8 @@
                             <span class="tech-item">NLP</span>
                         </div>
                         <div class="project-links">
-                            <a href="#"><i class="fas fa-external-link-alt"></i> VakeelAdvisorBot</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> RecipeBot</a>
+                            <a href="https://github.com/sushmitha6145"><i class="fas fa-external-link-alt"></i> VakeelAdvisorBot</a>
+                            <a href="https://github.com/sushmitha6145"><i class="fas fa-external-link-alt"></i> RecipeBot</a>
                         </div>
                     </div>
                 </div>
@@ -826,10 +889,34 @@
                             <span class="tech-item">Streamlit</span>
                         </div>
                         <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i> View on GitHub</a>
+                            <a href="https://github.com/sushmitha6145"><i class="fab fa-github"></i> View on GitHub</a>
                         </div>
                     </div>
                 </div>
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>SwarnBot</h3>
+                        <p>Flask | AI Chatbot | College Website</p>
+                    </div>
+                    <div class="card-body">
+                        <p>Built an intelligent chatbot powered by Mistral-7B AI model and vector databases to enhance user interaction on the Swarnandhra College website.</p>
+                        <ul>
+                            <li>Trained on data extracted from the Swarnandhra College website</li>
+                            <li>Enabled fast, accurate responses to student and visitor queries</li>
+                            <li>Seamlessly integrated using Flask for a smooth web experience</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-item">Mistral</span>
+                            <span class="tech-item">Vector DB</span>
+                            <span class="tech-item">Flask</span>
+                            <span class="tech-item">AI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sushmitha6145"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="project-card">
                     <div class="card-header">
                         <h3>VakeelAdvisorBot</h3>
@@ -848,7 +935,7 @@
                             <span class="tech-item">Telegram API</span>
                         </div>
                         <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i> View on GitHub</a>
+                            <a href="https://github.com/sushmitha6145"><i class="fab fa-github"></i> View on GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -871,7 +958,7 @@
                             <span class="tech-item">Data Analysis</span>
                         </div>
                         <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i> View on GitHub</a>
+                            <a href="https://github.com/sushmitha6145/covid-19"><i class="fab fa-github"></i> View on GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -976,8 +1063,8 @@
             </div>
             <div class="social-links">
                 <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://in.linkedin.com/in/sushmithapindi"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://youtube.com/@vibe_with_sushmitha?si=9SyOSJLokoC024ng"><i class="fab fa-youtube"></i></a>
             </div>
             <p class="copyright">© 2024 Sushmitha Devi Pindi. All rights reserved.</p>
         </div>
